@@ -199,10 +199,12 @@ namespace QAEjercicio1
                 logBtn.Click();
                 System.Threading.Thread.Sleep(3000);
 
+                //5. Type password
                 var passTxt = driver.FindElementById("password");
                 passTxt.SendKeys("1234asd");
                 System.Threading.Thread.Sleep(2000);
 
+                // 6. Press login
                 var loginBtn = driver.FindElementById("action-complete");
                 loginBtn.Click();
 
